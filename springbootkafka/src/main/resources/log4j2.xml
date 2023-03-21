@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ====================================== -->
+<!--        application logger              -->
+<!-- ====================================== -->
+<!--suppress ALL -->
+<Configuration status="INFO" monitorInterval="60">
+    <ThresholdFilter level="DEBUG"/>
+    <Appenders>
+        <Console name="DEFAULT" target="SYSTEM_OUT">
+            <PatternLayout>
+                <Pattern>[%d][%p][%c{1.}:%L:%M] - %m%n</Pattern>
+            </PatternLayout>
+        </Console>
+        <Async name="ASYNC-DEFAULT" includeLocation="true">
+            <AppenderRef ref="DEFAULT"/>
+        </Async>
+    </Appenders>
+    <Loggers>
+        <!-- OFF -->
+
+        <!-- ERROR -->
+
+        <!-- WARN -->
+
+        <!-- INFO -->
+        <logger name="org.springframework" level="INFO"/>
+        <logger name="org.apache.tomcat" level="INFO"/>
+        <logger name="org.apache.catalina" level="INFO"/>
+        <logger name="org.apache.coyote" level="INFO"/>
+        <logger name="org.apache.jasper" level="INFO"/>
+        <logger name="sun.rmi" level="INFO"/>
+        <logger name="javax.rmi" level="INFO"/>
+        <logger name="javax.management" level="INFO"/>
+
+
+        <logger name="ro.myset.robot" level="INFO"/>
+        <logger name="org.hibernate" level="INFO"/>
+
+        <!-- DEBUG -->
+        <logger name="org.junit" level="DEBUG"/>
+        <logger name="ro.myset.robot.api.Application1" level="DEBUG"/>
+
+
+
+        <Root level="DEBUG">
+            <AppenderRef ref="ASYNC-DEFAULT"/>
+        </Root>
+    </Loggers>
+</Configuration>
