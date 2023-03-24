@@ -38,7 +38,6 @@
 
         <!-- DEBUG -->
         <logger name="org.junit" level="DEBUG"/>
-        <logger name="ro.myset.robot.api.Application1" level="DEBUG"/>
 
 
 
