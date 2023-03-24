@@ -20,7 +20,6 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.JstlView;
 
 @Configuration
-@ComponentScan(basePackages = {"org.example.codechallenges.springbootkafka"})
 public class WebMvcConfigurerImpl implements WebMvcConfigurer {
 
     private static final Logger LOG = LogManager.getFormatterLogger(WebMvcConfigurerImpl.class);
