@@ -49,6 +49,7 @@ public class KafkaConsumerConfiguration {
         //factory.setAckDiscarded(true);
         factory.setConsumerFactory(consumerFactory());
         factory.getContainerProperties().setPollTimeout(10000);
+        factory.getContainerProperties();
         factory.setRecordFilterStrategy(new RecordFilterStrategy<String, String>() {
             @Override
             public boolean filter(ConsumerRecord<String, String> consumerRecord) {

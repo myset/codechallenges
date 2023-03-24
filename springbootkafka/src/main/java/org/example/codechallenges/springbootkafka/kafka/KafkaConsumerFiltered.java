@@ -35,20 +35,20 @@ public class KafkaConsumerFiltered {
         jpaMessage.setMessage(message);
 
         // no batch insert into database
-        //messagesRepository.save(jpaMessage);
+        messagesRepository.save(jpaMessage);
 
 
         // batch insert into database
-        if(messagesBatch==null)
-            messagesBatch=new ArrayList<Message>();
-
-        if(messagesBatch.size() < batchMaxSize){
-            messagesBatch.add(jpaMessage);
-        }
-        else {
-            messagesRepository.saveAll(messagesBatch);
-            messagesBatch=new ArrayList<Message>();
-        }
+//        if(messagesBatch==null)
+//            messagesBatch=new ArrayList<Message>();
+//
+//        if(messagesBatch.size() < batchMaxSize){
+//            messagesBatch.add(jpaMessage);
+//        }
+//        else {
+//            messagesRepository.saveAll(messagesBatch);
+//            messagesBatch=new ArrayList<Message>();
+//        }
 
     }
 
