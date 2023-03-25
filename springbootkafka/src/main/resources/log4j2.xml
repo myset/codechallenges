@@ -31,9 +31,6 @@
         <logger name="sun.rmi" level="INFO"/>
         <logger name="javax.rmi" level="INFO"/>
         <logger name="javax.management" level="INFO"/>
-
-
-        <logger name="ro.myset.robot" level="INFO"/>
         <logger name="org.hibernate" level="INFO"/>
 
         <!-- DEBUG -->
