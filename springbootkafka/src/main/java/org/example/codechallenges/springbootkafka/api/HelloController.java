@@ -1,4 +1,4 @@
-package org.example.codechallenges.springbootkafka.springboot;
+package org.example.codechallenges.springbootkafka.api;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -8,8 +8,8 @@ import org.springframework.web.server.ResponseStatusException;
 
 
 @RestController
-public class Controller {
-    private static final Logger LOG = LogManager.getFormatterLogger(Controller.class);
+public class HelloController {
+    private static final Logger LOG = LogManager.getFormatterLogger(HelloController.class);
 
     @GetMapping("/hello/{name}")
     public String hello(@PathVariable(value = "name") String name) {

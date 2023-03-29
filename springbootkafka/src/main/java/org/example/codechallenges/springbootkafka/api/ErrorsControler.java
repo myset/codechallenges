@@ -1,4 +1,4 @@
-package org.example.codechallenges.springbootkafka.springboot;
+package org.example.codechallenges.springbootkafka.api;
 
 import jakarta.servlet.http.HttpServletRequest;
 import org.apache.logging.log4j.LogManager;

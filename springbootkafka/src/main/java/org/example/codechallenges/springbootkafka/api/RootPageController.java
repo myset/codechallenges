@@ -1,4 +1,4 @@
-package org.example.codechallenges.springbootkafka.springboot;
+package org.example.codechallenges.springbootkafka.api;
 
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;

@@ -1,5 +1,6 @@
-package org.example.codechallenges.springbootkafka.kafka;
+package org.example.codechallenges.springbootkafka.api;
 
+import org.example.codechallenges.springbootkafka.kafka.KafkaProducer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
